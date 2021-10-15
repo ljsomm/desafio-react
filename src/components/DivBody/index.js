@@ -1,8 +1,11 @@
 import './styles.css';
-export default props => {
+
+const DivBody =  props => {
     return(
         <div className={"div-body"}>
             { props.children }
         </div>
     );
 }
+
+export default DivBody;

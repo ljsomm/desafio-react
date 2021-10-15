@@ -3,7 +3,7 @@ import ServersContext from "../../context/ServersContext";
 import api from "../../services/api";
 import './styles.css';
 
-export default props => {
+const Datatable = props => {
 
     const { state, dispatch } = useContext(ServersContext)
     const [ servers, handler] = useState([]);
@@ -58,7 +58,7 @@ export default props => {
                 <tbody>
                     {servers.map(item =>{
                         return (
-                            <tr>
+                            <tr key={item.id_vm}>
                                 <td><input id={item.id_vm} onClick={handleCheckbox} type={"checkbox"}/></td>
                                 <td>{item.hostname}</td>
                                 <td>{item.configuracao.memoryProvisioned} GB</td>
@@ -102,3 +102,4 @@ export default props => {
     
 }
 
+export default Datatable;

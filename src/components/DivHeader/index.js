@@ -1,8 +1,11 @@
 import './styles.css';
-export default props => {   
+
+const DivHeader = props => {   
     return(
         <div className={"div-header"}>
             { props.children }
         </div>
     );
 }
+
+export default DivHeader;
