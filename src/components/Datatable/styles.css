@@ -1,3 +1,9 @@
+.tb-vertical, .tb-horizontal{
+    border-radius: 10px;
+    border: 0.25px solid #DDDDDD;
+    border-spacing: 0px;
+}
+
 th{
     background-color: #F0F0F0;
 }
@@ -7,21 +13,45 @@ th, td{
     font-size: 14px;
     width: 250px;
     height: 40px;
-    border: 0.5px solid #DDDDDD;
+    border: 0.25px solid #DDDDDD;
+    text-align: center;
 }
 
-.horizontal{
+.cel-horizontal{
     width: 75%;
     font-weight: bold;
 }
 
-td{
-    text-align: center;
+.tb-vertical th:first-child{
+    border-top-left-radius: 10px;
 }
 
-table{
-    border-radius: 50px;
-    border-spacing: 0px;
+.tb-vertical th:last-child{
+    border-top-right-radius: 10px;
+}
+
+.tb-vertical tr:last-child td:first-child{
+    border-bottom-left-radius: 10px;
+}
+
+.tb-vertical tr:last-child td:last-child{
+    border-bottom-right-radius: 10px;
+}
+
+.tb-horizontal tr:first-child th{
+    border-top-left-radius: 10px;
+}
+
+.tb-horizontal tr:first-child td{
+    border-top-right-radius: 10px;
+}
+
+.tb-horizontal tr:last-child th{
+    border-bottom-left-radius: 10px;
+}
+
+.tb-horizontal tr:last-child td{
+    border-bottom-right-radius: 10px;
 }
 
 input[type="checkbox"]{

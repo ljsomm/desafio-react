@@ -43,8 +43,7 @@ const Datatable = props => {
 
     if(!props.col){
         return( 
-            
-            <table>
+            <table className={"tb-vertical"}>
                 <thead>
                     <tr>
                         <th>Select</th>
@@ -71,27 +70,28 @@ const Datatable = props => {
                     })}
                 </tbody>
             </table> 
+
         );
     }
     else{
         return(
-            <table>
+            <table className={"tb-horizontal"}>
                 <tbody>
                     <tr>
                         <th>Servidores Selecionados</th>
-                        <td className={"horizontal"}>{state.servers.length} servidores selecionados</td>
+                        <td className={"cel-horizontal"}>{state.servers.length} servidores selecionados</td>
                     </tr>
                     <tr>
                         <th>Total de Memória</th>
-                        <td className={"horizontal"}>{ state.mem } GB</td>
+                        <td className={"cel-horizontal"}>{ state.mem } GB</td>
                     </tr>
                     <tr>
                         <th>Total de CPUs</th>
-                        <td className={"horizontal"}>{ state.cpu } vCPUs</td>
+                        <td className={"cel-horizontal"}>{ state.cpu } vCPUs</td>
                     </tr>
                     <tr>
                         <th>Total de Discos</th>
-                        <td className={"horizontal"}>{ state.disk } GB</td>
+                        <td className={"cel-horizontal"}>{ state.disk } GB</td>
                     </tr>
                 </tbody>
             </table>
