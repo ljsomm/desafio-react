@@ -1,8 +1,5 @@
 # Desafio React JS
 
-# Getting Started with Create React App
-
-
 Demonstração real da aplicação (v4.0.1):
 ![image](https://user-images.githubusercontent.com/48564798/137432098-4e7ef94f-6f58-4eb5-b79d-2dc4dc5c8781.png)
 
