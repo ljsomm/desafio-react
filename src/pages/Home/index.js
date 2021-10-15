@@ -1,18 +1,26 @@
+import { useContext } from 'react';
 import ContentDiv from '../../components/ContentDiv';
+import Datatable from '../../components/Datatable';
 import DefaultLayout from '../../components/DefaultLayout';
 import DivBody from '../../components/DivBody';
 import DivHeader from '../../components/DivHeader';
+import ServersContext from '../../context/ServersContext';
 function Home() {
+  
   return (
     <DefaultLayout>
       <main>
         <ContentDiv>
           <DivHeader>Sumário dos recursos dos servidores</DivHeader>
-          <DivBody>Aqui é o corpo</DivBody>
+          <DivBody>
+             <Datatable col={true}/> 
+          </DivBody>
         </ContentDiv> 
         <ContentDiv>
           <DivHeader>Tabela de Servidores</DivHeader>
-          <DivBody>Aqui é o corpo</DivBody>
+          <DivBody>
+            <Datatable col={false}/>
+          </DivBody>
         </ContentDiv> 
       </main>
     </DefaultLayout>

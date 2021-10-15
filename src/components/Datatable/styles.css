@@ -1,0 +1,20 @@
+th{
+    background-color: #F0F0F0;
+}
+
+th, td{
+    padding: 16px;
+    font-size: 14px;
+    width: 194.6px;
+   
+    border: 0.5px solid rgb(163, 163, 163);
+}
+
+td{
+    text-align: center;
+}
+
+table{
+    border-radius: 50px;
+    border-spacing: 0px;
+}
