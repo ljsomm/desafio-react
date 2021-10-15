@@ -2,7 +2,7 @@ import './styles.css';
 
 export default props => {
     return(
-        <div class={"content-div"}>
+        <div className={"content-div"}>
             {props.children}
         </div>
     );

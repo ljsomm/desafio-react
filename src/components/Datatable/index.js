@@ -37,62 +37,63 @@ export default props => {
         return obj;
     }
 
-
-
     useEffect(()=>{
        getServers();
     }, []);
-
 
     if(!props.col){
         return( 
             
             <table>
-               
-                <tr>
-                    <th>Select</th>
-                    <th>Hostname</th>
-                    <th>Memória</th>
-                    <th>vCPUs</th>
-                    <th>Disco</th>
-                    <th>IP</th>
-                </tr>
-                {servers.map(item =>{
-                    return (
-                        <tr>
-                            <td><input id={item.id_vm} onClick={handleCheckbox} type={"checkbox"}/></td>
-                            <td>{item.hostname}</td>
-                            <td>{item.configuracao.memoryProvisioned} GB</td>
-                            <td>{item.configuracao.cpuProvisioned} vCPUs</td>
-                            <td>{item.configuracao.totalDiskGB} GB</td>
-                            <td>{item.ip}</td>
-                            
-                        </tr>
-                    );
-                })}
-               
+                <thead>
+                    <tr>
+                        <th>Select</th>
+                        <th>Hostname</th>
+                        <th>Memória</th>
+                        <th>vCPUs</th>
+                        <th>Disco</th>
+                        <th>IP</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {servers.map(item =>{
+                        return (
+                            <tr>
+                                <td><input id={item.id_vm} onClick={handleCheckbox} type={"checkbox"}/></td>
+                                <td>{item.hostname}</td>
+                                <td>{item.configuracao.memoryProvisioned} GB</td>
+                                <td>{item.configuracao.cpuProvisioned} vCPUs</td>
+                                <td>{item.configuracao.totalDiskGB} GB</td>
+                                <td>{item.ip}</td>
+                                
+                            </tr>
+                        );
+                    })}
+                </tbody>
             </table> 
         );
     }
     else{
         return(
             <table>
-                <tr>
-                    <th>Servidores Selecionados</th>
-                    <td>{state.servers.length} servidores selecionados</td>
-                </tr>
-                <tr>
-                    <th>Total de memória</th>
-                    <td>{ state.mem } GB</td>
-                </tr>
-                <tr>
-                    <th>Total de CPUs</th>
-                    <td>{ state.cpu } vCPUs</td>
-                </tr>
-                <tr>
-                    <th>Total de Discos</th>
-                    <td>{ state.disk } GB</td>
-                </tr>
+                <tbody>
+                    <tr>
+                        <th>Servidores Selecionados</th>
+                        <td className={"horizontal"}>{state.servers.length} servidores selecionados</td>
+                    </tr>
+                    <tr>
+                        <th>Total de Memória</th>
+                        <td className={"horizontal"}>{ state.mem } GB</td>
+                    </tr>
+                    <tr>
+                        <th>Total de CPUs</th>
+                        <td className={"horizontal"}>{ state.cpu } vCPUs</td>
+                    </tr>
+                    <tr>
+                        <th>Total de Discos</th>
+                        <td className={"horizontal"}>{ state.disk } GB</td>
+                    </tr>
+                </tbody>
             </table>
         );
     }

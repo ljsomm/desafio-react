@@ -3,11 +3,16 @@ th{
 }
 
 th, td{
-    padding: 16px;
+    padding: 3px 20px;
     font-size: 14px;
-    width: 194.6px;
-   
-    border: 0.5px solid rgb(163, 163, 163);
+    width: 250px;
+    height: 40px;
+    border: 0.5px solid #DDDDDD;
+}
+
+.horizontal{
+    width: 75%;
+    font-weight: bold;
 }
 
 td{
@@ -17,4 +22,8 @@ td{
 table{
     border-radius: 50px;
     border-spacing: 0px;
+}
+
+input[type="checkbox"]{
+    cursor: pointer;
 }

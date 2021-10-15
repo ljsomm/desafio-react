@@ -1,4 +1,4 @@
-import './Style.css';
+import './styles.css';
 export default props => {   
     return(
         <div className={"div-header"}>
