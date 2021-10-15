@@ -1,8 +1,7 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 import AppRoutes from "./routes"
-import Datatable from "./components/Datatable";
 import { ServersProvider } from "./context/ServersContext";
-import { useReducer } from "react";
+
 const App = () => {
 
   return (
