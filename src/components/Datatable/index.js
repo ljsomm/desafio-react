@@ -26,7 +26,7 @@ const Datatable = props => {
     const ret = (id, serv) => {
         let obj;
         for(let i = 0; i < serv.length; i++){
-            if(serv[i].id_vm == id){
+            if(serv[i].id_vm === parseInt(id)){
                 obj = {
                     mem: serv[i].configuracao.memoryProvisioned, 
                     cpu: serv[i].configuracao.cpuProvisioned, 
