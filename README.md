@@ -2,6 +2,11 @@
 Este é o desafio para seleção para desenvolvedores Front-End React JS.  Nele você será convidado a construir uma página de exibição de dados de servidores conforme o modelo apresentado no Figma. Não é necessário construir a página com fidelidade total de estilização, pois, o mais importante para nós é conhecer a sua habilidade e domínio da biblioteca React, contudo, se você conseguir ser fiel ao modelo do Figma isso será considerado um plus.
 # Getting Started with Create React App
 
+
+Demonstração real da aplicação (v4.0.1):
+![image](https://user-images.githubusercontent.com/48564798/137432098-4e7ef94f-6f58-4eb5-b79d-2dc4dc5c8781.png)
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
